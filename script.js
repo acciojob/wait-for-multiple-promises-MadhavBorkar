@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalTime = (performance.now() - startTime) / 1000;
 
         // Clear the table
-        outputTable.innerHTML = '';
+        document.getElementById('loading').remove();
 
         // Populate the table with results
         results.forEach(result => {
